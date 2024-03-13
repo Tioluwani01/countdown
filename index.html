@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Tiolu's Countdown Timer</title>
+<script>
+ 
+  var countDownDate = new Date().getTime() + (10 * 24 * 60 * 60 * 1000);
+
+  var x = setInterval(function() {
+
+    var now = new Date().getTime();
+
+    var distance = countDownDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("timer").innerHTML = days + "d " + hours + "h "+ minutes + "m " + seconds + "s ";
+
+  }, 1000);
+</script>
+<style>
+  body {
+  background-image: url('luxury2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  }  
+  </style>
+</head>
+<body>
+ 
+
+<div style="text-align:center;">
+<h1 style="font-size:100px;"> Tiolu's Countdown Timer</h1>
+</div>
+
+<div style="text-align:center;">
+<p style="font-size:60px;"id="timer"></p>
+</div>
+
+<h3>Prepare yourselves for the furniture giveaway event of the year! In just 10 days, Teddy Enterprises is rolling out the red carpet for a spectacular giveaway extravaganza. Picture this: a stunning array of premium furniture pieces waiting to find their new homes. From plush sofas and armchairs to elegant dining sets and sleek coffee tables, there's something to suit every taste and style. Teddy Enterprises is renowned for its commitment to quality and design excellence, and this giveaway is no exception. To enter, all you have to do is follow Teddy Enterprises on your favorite social media platforms and keep an eye out for contest details. Whether you're dreaming of a cozy reading nook or a sophisticated dining area, this giveaway is your chance to turn those dreams into reality. Imagine the thrill of winning that perfect statement piece to elevate your living space to new heights of luxury and comfort. So mark your calendars, set those reminders, and get ready to join the excitement as Teddy Enterprises opens its doors to a world of fabulous furnishings. Don't miss out on this incredible opportunity to transform your home with the finest furniture, courtesy of Teddy Enterprises</h3>
+</body>
+</html>
+
+
